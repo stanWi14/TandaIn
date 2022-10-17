@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MenuActivity"
+    android:id="@+id/layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/headerLayout">
+
+        <ImageView
+            android:id="@+id/imgRestaurant"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/restaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgRestaurant"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/imgRestaurant"
+            android:text="Restaurant Name" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@id/headerLayout"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/totalItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvMenu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:text="Total : " />
+
+    <Button
+        android:id="@+id/chooseDateTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvMenu"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:text="Choose Date and Time" />
+
+</RelativeLayout>

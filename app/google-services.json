@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "761234760806",
+    "firebase_url": "https://tandain-e0472-default-rtdb.firebaseio.com",
+    "project_id": "tandain-e0472",
+    "storage_bucket": "tandain-e0472.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761234760806:android:57268e1b4fdc432efb39a7",
+        "android_client_info": {
+          "package_name": "com.axel.tandain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761234760806-feureq1fe0stssapk3r2eveb4ru4h8iv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm607XaBQJfO_cCpAWCeU4nKb3FjXbGqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761234760806-feureq1fe0stssapk3r2eveb4ru4h8iv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

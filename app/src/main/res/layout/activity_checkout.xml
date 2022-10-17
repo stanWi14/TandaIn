@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CheckoutActivity">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/dateTimeInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : "/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time : "/>
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration : "/>
+
+        <TextView
+            android:id="@+id/tvPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People : "/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:id="@+id/menuInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:layout_gravity="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMenuList"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total : Rp "
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="150dp"
+            />
+
+        <Button
+            android:id="@+id/btnReserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reserve" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
